@@ -13,13 +13,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" >
       <body className="flex max-md:flex-col max-w-screen max-md:overflow-y-auto
-       md:max-h-screen max-md:pb-16 overflow-x-hidden h-fit
+       max-h-screen max-md:pb-16 overflow-x-hidden h-fit
        bg-gray-100 dark:bg-black text-gray-900 dark:text-gray-50">
         <Sidebar />
-        <main className="flex-1 px-y max-w-screen overflow-x-hidden">
+        <main className="flex-1 px-y max-w-screen overflow-x-hidden h-fit">
           {children}
         </main>
-        <footer >
+        <footer className="h-fit" >
           <MobileNav />
         </footer>
       </body>
